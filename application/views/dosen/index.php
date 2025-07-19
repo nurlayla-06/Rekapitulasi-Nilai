@@ -1,15 +1,12 @@
-<!-- Begin Page Content -->
 <div class="container-fluid">
 
-    <!-- Page Heading -->
     <h1 class="h3 mb-4 text-gray-800"><?= $title; ?></h1>
 
     <?php
-    // Koneksi ke database
     $servername = "localhost";
-    $username = "root"; // Ganti dengan username database Anda
-    $password = ""; // Ganti dengan password database Anda
-    $dbname = "bd_5097"; // Ganti dengan nama database Anda
+    $username = "root"; 
+    $password = ""; 
+    $dbname = "bd_5097"; 
 
     $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -58,9 +55,8 @@
     }
     ?>
 
-    <!-- Card Statistik -->
+   
     <div class="row">
-        <!-- Card Jumlah Mahasiswa -->
         <div class="col-md-4 mb-4">
             <div class="card border-left-primary shadow h-100 py-2">
                 <div class="card-body">
