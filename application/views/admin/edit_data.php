@@ -1,9 +1,8 @@
 <?php
-// Koneksi ke database
-$host = 'localhost'; // Sesuaikan dengan host Anda
-$dbname = 'bd_5097'; // Ganti dengan nama database Anda
-$username = 'root'; // Ganti dengan username database Anda
-$password = ''; // Ganti dengan password database Anda
+$host = 'localhost'; 
+$dbname = 'bd_5097'; 
+$username = 'root'; 
+$password = ''; 
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
@@ -39,13 +38,10 @@ try {
 }
 ?>
 
-<!-- Begin Page Content -->
 <div class="container-fluid">
 
-    <!-- Page Heading -->
     <h1 class="h3 mb-4 text-primary"><?= $title; ?></h1>
 
-    <!-- Data Management Section -->
     <div id="data" class="my-4">
         <div class="table-responsive">
             <table class="table table-bordered table-striped">
@@ -86,9 +82,7 @@ try {
     </div>
 
 </div>
-<!-- /.container-fluid -->
 
-<!-- Modal for Editing Data -->
 <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
